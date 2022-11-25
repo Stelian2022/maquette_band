@@ -12,7 +12,8 @@ body {
   margin: 0;
   padding: 0;
 }
-/* menu resp */
+
+/* navbar */
 
 #menuHeader {
   display: flex;
@@ -53,7 +54,7 @@ body {
   padding-bottom: 2px;
   padding-left: 10px;
 }
-
+/* menu resp */
 #burger {
   color: white;
   font-size: 2rem;
@@ -69,7 +70,7 @@ body {
 }
 #box:not(:checked) ~ ul {
   max-height: 0;
-  /* background-color: red; */
+  
 }
 /* The navigation menu */
 .navbar {
@@ -108,7 +109,6 @@ body {
 #header {
   background-image: url(../img/la.jpg);
 
-  height: 40vh;
   background-size: cover;
 }
 
@@ -125,6 +125,10 @@ body {
 }
 #theBand p {
   font-size: 1.5rem;
+  text-align: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
 }
 #theBand {
   padding-bottom: 2rem;
@@ -170,6 +174,7 @@ body {
 .tickets2 {
   background-color: white;
 }
+
 .tickets h5 {
   text-align: left;
   color: grey;
@@ -210,7 +215,6 @@ body {
 }
 
 #newYork {
- 
   margin: 1rem;
   height: 60vh;
   background-color: white;
@@ -325,19 +329,29 @@ h6 {
 
   .navbar a {
     color: white;
-    font-size: 1.8rem;
-    padding-left: 5rem;
+    font-size: 1.5rem;
   }
   .navbar {
     display: flex;
     flex-direction: row;
     position: absolute;
   }
-
+  /* search button */
+  .search {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: white;
+    font-size: 2rem;
+  }
+  #menuHeader {
+    position: relative;
+  }
   #menuHeader ul {
     top: 0.1rem;
-    left: 5rem;
 
+    height: 6vh;
+    width: 50%;
     color: black;
   }
   #box:not(:checked) ~ ul {
@@ -428,7 +442,7 @@ h6 {
   }
 
   .imgFoot img {
-    height: 450h;
+    
     width: 100%;
     padding-top: 10rem;
   }
