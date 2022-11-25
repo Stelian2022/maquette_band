@@ -131,9 +131,9 @@ body {
 }
 
 /* photos section */
-#midPhotos{
-    display: flex;
-    flex-direction: column;
+#midPhotos {
+  display: flex;
+  flex-direction: column;
 }
 #midPhotos h2 {
   text-align: center;
@@ -210,6 +210,7 @@ body {
 }
 
 #newYork {
+ 
   margin: 1rem;
   height: 60vh;
   background-color: white;
@@ -235,9 +236,7 @@ main {
   color: white;
 }
 #newYork img {
-width: 100%;
-  height: auto;
-
+  width: 100%;
 }
 #BuyTickets {
   width: 100px;
@@ -249,7 +248,7 @@ width: 100%;
 #contact {
   padding-top: 4rem;
   width: 100%;
-  height: 120vh;
+  height: 70vh;
   background-color: white;
 }
 #contact h4 {
@@ -288,9 +287,12 @@ width: 100%;
 
   right: 2rem;
 }
-#contact img {
-  padding-top: 10rem;
+
+.imgFoot img {
   width: 100%;
+}
+h6 {
+  text-align: center;
 }
 /* footer */
 .reseaux {
@@ -301,85 +303,133 @@ width: 100%;
 #contact h6 {
   text-align: center;
 }
-
+#contact h4 {
+  font-size: 1rem;
+}
+.fans h4 {
+  font-size: 1.8rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+.fans h5 {
+  font-style: italic;
+  text-align: center;
+  color: grey;
+}
 
 /* format desktop */
 @media screen and (min-width: 576px) {
+  #menuHeader label {
+    display: none;
+  }
 
+  .navbar a {
+    color: white;
+    font-size: 1.8rem;
+    padding-left: 5rem;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+  }
 
-    #menuHeader label {
-        display: none;
-      }
+  #menuHeader ul {
+    top: 0.1rem;
+    left: 5rem;
 
+    color: black;
+  }
+  #box:not(:checked) ~ ul {
+    max-height: 70vh;
+  }
+  /* fin menu */
 
-      .navbar a {
-        color: white;
-        font-size: 1.8rem;
-        padding-left: 5rem;
-      }
-      .navbar {
-      display: flex;
-      flex-direction: row;
-        position: absolute;
-      }
-   
-      #menuHeader ul {
-      
-    
-        top: .1rem;
-        left: 5rem;
-    
-        color: black;
-      }
-      #box:not(:checked) ~ ul {
-        max-height: 70vh;
-        
-    
-        
-      }
-      /* fin menu */
-    
-      #header {
-        color: black;
-        font-size: 1.5rem;
-        height: 70vh;
-      }
-      #theBand{
-        margin-right: 10%;
-        margin-left: 10%;
-    }
+  #header {
+    color: black;
+    font-size: 1.5rem;
+    height: 70vh;
+  }
+  #theBand {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
 
+  #midPhotos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 
-    #midPhotos{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-       margin-left: 10%;
-       margin-right: 10%;
-    
-    }
+  /* photo section */
+  #newYork {
+    width: 32%;
+  }
+  #spectacle {
+    display: flex;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  .tickets {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .tickets2 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 
-    
-/* photo section */
-    #newYork{
-        width: 32%;
-       
+  /* section contact */
 
-    }
-    #spectacle{
-        display: flex;
-        margin-right: 2rem;
-        margin-left: 2rem;    
-    }
-    .tickets{
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-    .tickets2{
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
+  #contactForm {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    position: relative;
+    padding-right: 10%;
+  }
+  .contactMessage {
+    width: 100%;
+  }
+  .adress {
+    width: 30%;
+    padding-left: 10%;
+  }
+  #contact h4 {
+    font-size: 1rem;
+  }
+
+  #contactForm button {
+    position: absolute;
+    right: 24%;
+    top: 20vh;
+  }
+  #contact {
+    display: flex;
+    justify-content: space-between;
+    height: 30vh;
+  }
+
+  .fans h4 {
+    font-size: 1.8rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+  }
+  .fans h5 {
+    font-style: italic;
+    text-align: center;
+    color: grey;
+  }
+
+  h6 {
+    text-align: center;
+  }
+
+  .imgFoot img {
+    height: 450h;
+    width: 100%;
+    padding-top: 10rem;
+  }
 }
-
-
-
