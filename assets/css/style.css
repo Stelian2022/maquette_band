@@ -398,17 +398,24 @@ h6 {
   }
 
   /* section contact */
-
+/* j'ai utilisé div et flex pour les placeholders */
   #contactForm {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
     position: relative;
     padding-right: 10%;
+    
   }
   .contactMessage {
     width: 100%;
+    
   }
+  .contactName{
+    width: 48%;  }
+    .contactEmail{
+      width: 48%;
+    }
   .adress {
     width: 30%;
     padding-left: 10%;
@@ -421,6 +428,11 @@ h6 {
     position: absolute;
     right: 24%;
     top: 20vh;
+  }
+  #contactForm input{
+    border-bottom: solid 1px grey;
+    border-right: solid 1px grey;
+
   }
   #contact {
     display: flex;
