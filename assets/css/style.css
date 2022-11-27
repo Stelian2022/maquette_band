@@ -427,7 +427,7 @@ h6 {
   }
   #contactForm input {
     border-bottom: solid 1px grey;
-    border-right: solid 1px grey;
+    border-right: solid 1px;
   }
   #contact {
     display: flex;
