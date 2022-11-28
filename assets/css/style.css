@@ -145,8 +145,10 @@ body {
   justify-content: center;
 }
 .imgFrame img {
+  width: 100%;
   width: 300px;
   border-radius: 2%;
+  margin: 1rem;
 }
 
 #mid {
@@ -214,8 +216,9 @@ body {
 
 #newYork {
   margin: 1rem;
-  height: 68vh;
+  /* height: 68vh; */
   background-color: white;
+  height: 100%;
 }
 #newYork h3 {
   padding-left: 1rem;
@@ -235,6 +238,7 @@ main {
 #newYork input {
   background-color: black;
   margin-left: 1rem;
+  margin-bottom: 1rem;
   color: white;
 }
 #newYork img {
@@ -365,6 +369,12 @@ h6 {
   #theBand {
     margin-right: 10%;
     margin-left: 10%;
+  }
+  .imgFrame {
+    width: 100%;
+  }
+  .imgFrame img {
+    width: 70%;
   }
 
   #midPhotos {
